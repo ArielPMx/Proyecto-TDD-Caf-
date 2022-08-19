@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto');
+
+
+.inventario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 20%;
+    left: 5%;
+}
+
+.inventario .card{
+    text-align: center;
+}
+.inventario .card img{
+    margin: 0 auto;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    width: 180px;
+    height: 180px;
+}
+.wrapper{
+    margin: 0 auto;
+    height: 30px;
+    width: 65%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FFF;
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.wrapper span{
+    width: 70%;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 400;
+    cursor: pointer;
+    user-select: none;
+}
+.wrapper span.num{
+    font-size: 20px;
+    border-right: 2px solid rgba(0,0,0,0.2);
+    border-left: 2px solid rgba(0,0,0,0.2);
+    pointer-events: none;
+    cursor: none;
+}
+
+
+.inicio{
+    margin-top: 25px;
+}
+
+.pedidos{
+    display: flex;
+}
+
+.formulario button{
+    margin: 3px;
+}
+
+
+.pedidos i{
+    margin: 2px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    height: 47px;
+    width: 47px;
+    display: flex;
+    cursor: pointer;
+    color: #c1804f;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 2px solid #c1804f;
+    transition: all 0.3s ease;
+}
+/* azucar:797780 */
+
+.pedidos i:hover{
+    color: #fff;
+    background: #c1804f;
+}
+
+.pedidoA i{
+    margin: 2px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    cursor: pointer;
+    color: #797780;
+    align-items: center;
+    justify-content: center;
+    border-radius: 55%;
+    border: 2px solid #797780;
+    transition: all 0.3s ease;
+}
+
+
+.pedidoA i:hover{
+    color: #fff;
+    background: #797780;
+}
+  
+
+#cancelarOrden{
+    display: none;
+}
+
+.tablaHistorial{
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 40px;
+    text-align: center;
+}

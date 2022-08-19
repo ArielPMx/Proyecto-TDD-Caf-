@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Maquina de Cafe</title>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand">
+          <img src="/img/cafeteria.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
+          Maquina De Cafe
+        </a>
+        <form class="d-flex">
+          <a class="nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="/img/iniciar-sesion (1).png" alt=""></a>
+        </form>
+      </div>
+    </nav>
+
+    <div class="card container inicio" style="max-width: 320px;">
+      <div class="row">
+        <div class="col-md-9">
+          <img src="/img/barista.png" class="img-fluid rounded-start" alt="...">
+        </div>
+        <div class="col-md-9">
+          <div class="card-body">
+            <h5 class="card-title">Ordena tu cafe</h5>
+            <section class="pedidos">
+              <i id="pedirCafePequeno">3 Oz</i>
+              <i id="pedirCafeMediano">5 Oz</i>
+              <i id="pedirCafeGrande">7 Oz</i>
+            </section>
+            <h5 class="card-title">Cantidad de azucar:</h5>
+            <section class="pedidos pedidoA">
+              <i id="pedirAzucar1"><img src="/img/cubos-de-azucar (2).png" alt="">1</i>
+              <i id="pedirAzucar2"><img src="/img/cubos-de-azucar (2).png" alt="">2</i>
+              <i id="pedirAzucar3"><img src="/img/cubos-de-azucar (2).png" alt="">3</i>
+              <i id="pedirAzucar4"><img src="/img/cubos-de-azucar (2).png" alt="">4</i>
+              <i id="pedirAzucar5"><img src="/img/cubos-de-azucar (2).png" alt="">5</i>
+            </section>
+            <br>
+            <section class="formulario">
+              <button type="button" id="terminarOrden" class="btn btn-secondary btn-sm" data-bs-toggle="modal" data-bs-target="#modalExitoDeCompra">
+                Recoger vaso
+              </button>
+              <button type="button" id="cancelarOrden" class="btn btn-danger btn-sm">Cancelar orden</button>
+            </section>
+           
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Login -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="input-group flex-nowrap">
+                <span class="input-group-text" id="addon-wrapping">@</span>
+                <input type="text" id="usuario" class="form-control" placeholder="Username: prueba" aria-label="Username" aria-describedby="addon-wrapping">
+              </div>
+              <br>
+              <div class="mb-3">
+                <input type="password" class="form-control" placeholder="Password: 12345" id="contrasena">
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" id="login">Iniciar Sesion</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Exito De Compra -->
+    <div class="modal fade" id="modalExitoDeCompra" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body" style="text-align: center;">
+            <h3 class="modal-title" id="staticBackdropLabel">Compra Exitosa</h3>
+            <br>
+            <img src="/img/marca-de-verificacion (1).png" alt="">
+            <br><br>
+            <h5 class="card-title">Cafe de <span id="cantidadCafeM"></span></h5>
+            <h5 class="card-title">Con <span id="cantidadAzucarM"></span> cucharadas de azucar</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <script src="/app/inicio.js"></script>
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+  </body>
+</html>
